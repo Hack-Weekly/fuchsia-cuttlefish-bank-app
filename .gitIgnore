@@ -1,1 +1,2 @@
-backend/src/
+/backend/src/**
+__pycache__/
