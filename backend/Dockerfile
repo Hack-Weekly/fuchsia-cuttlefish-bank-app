@@ -5,4 +5,5 @@ EXPOSE 8000
 WORKDIR /app
 COPY . /app 
 RUN . /app/scripts/setup.sh
-RUN python /app/bankapplication/manage.py runserver
+ENTRYPOINT [ "python" ]
+CMD [ "/app/bankapplication/manage.py", "runserver", "0.0.0.0:8000" ]
